@@ -1,49 +1,51 @@
-# Introduction
+# DOM Exploration
 
-## The concepts
+- Repository: `dom-exploration`
+- Type of Challenge: `learning`
+- Duration: `2-3 weeks`
+- Team challenge : `solo`
 
-### The DOM tree
+The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document.
 
-The Document Object Model allows us to visualize any HTML document as a "tree". The tree is made of `nodes`, being the different HTML elements in the page. Each document consists of a root node, which contains all the subsequent child nodes.
+In this series of challenges we're going to explore different aspect of this technology. Unless explicitly stated otherwise, you should **NEVER** edit the HTML files provided, everything has to be done using Javascript.
 
-![A simple DOM tree](../assets/tree.svg)
+## Prerequisite
 
-A node containing one or many nodes will be called a `parent node` whilst the contained nodes will be named `children nodes`.
+Before diving in, it is essential to grasp the main concepts of the Javascript language such as:
 
+- Variables and constants
+- Conditions
+- Loops
+- Arrays and objects
+- Functions
 
-### Text nodes
+## Chapters:
 
-At the end of the line we find `text nodes`. Those are special nodes that cannot bear a child, nor have attributes. For example :
-```html
-<p>Hello</p>
+```
+🌱 Must haves
+🌼 Nice to haves (doable)
+🌳 Nice to haves (hard)
 ```
 
-Here we have `p` node containing a `Hello` textnode.
+- [1. Introduction 🌱](./1.Introduction) 
+  - The DOM tree
+  - Nodes
+  - How to read a DOM tree using javascript
+  - Accessing root level nodes
+- [2. DOM Selectors 🌱](./2.Selectors)
+  - `querySelector` and `querySelectorAll` methods
+- [3. Creating nodes 🌱](./3.Create)
+  - The `createElement` method
+  - Inserting node
+- [4. Navigating the DOM 🌱](./4.Navigate)
+  - Siblings
+- [5. Events 🌱](./5.Events)
+- [6. Working with forms 🌱](./6.Forms)
+- [7. Big recap "drill exercise" 🌼](./7.DOM-drill)
 
-### Other nodes
+### Projects:
 
-Attributes can also be manipulated as nodes. HTML comments as well.
-
-### Accessing the DOM using Javascript
-
-There are some predefined Javascript objects in your browser. The DOM is one of them. If you open a console and type in `document.` you'll see a list of accessors to the DOM tree.
-
-Your exploration starts here...
-
-
-## Exercises:
-
-![A simple DOM tree](../assets/treetocode.png)
-
-- What would be the corresponding HTML code for the tree drawn above?
-- Open the [index.html](./index.html) and try to draw the corresponding DOM tree (either on a drawing app, or with plain old pen and paper)
-- Edit the [script.js](./script.js) to
-  - Display the document title in the console
-  - Change the document title to `Modifying the DOM`
-  - Change the background color of the body to hot pink (#FF69B4). If that worked, try with a random color as an extra challenge. (tip: You can use the `rgb()` notation and 3 random-generated numbers between 0 and 255).
-  - Using the children method and a `for ... of ` loop, display every children elements of the second child element of your document (display all children elements of the `<body>`)
-
-
-## Ready to continue ? Let's take care of those trees
-
-![Let's go](../assets/lumber.gif)
+- [**The Collection 🌱**](./3_Collection-project)
+- [**The Dark Kitchen 🌱**](./5_Dark-kitchen-project) 
+- [**The Calculator 🌱**](./6_Calculator-project)
+- [**An a-maze-ing project 🌳**](./7_amazeing-project)
