@@ -47,4 +47,3 @@ Your exploration starts here...
 ## Ready to continue ? Let's take care of those trees
 
 ![Let's go](../assets/lumber.gif)
-# verou-3-dom-exploration-KevinKagubari
