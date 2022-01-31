@@ -1,4 +1,3 @@
-
 console.log(document.title);
 
 // This does not change the previous statement
@@ -9,7 +8,7 @@ const body = document.body
 
 body.style.background = "#FF69B4";
 
-console.log(document.body.children);
+//console.log(document.body.children);
 
 
 
@@ -21,7 +20,13 @@ const kids = document.body.children;
 
 for (let kid of kids) {
     
-    console.log(kid)
+
+    var test = document.createAttribute('li')
+
+    test.value = kids[kid]
+
+    console.log(test)
+
     
     
 }
