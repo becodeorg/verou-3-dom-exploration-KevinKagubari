@@ -1,3 +1,4 @@
+ 
 const _initTime = Date.now()
 
 const getElapsedTime = () => {
@@ -7,6 +8,16 @@ const getElapsedTime = () => {
 const clickOnSquare = (e) => {
   console.log(e.target.classList[1])
   console.log(getElapsedTime())
+  const newSquare = document.querySelector('.displayedsquare')
+  const clnSquare = newSquare.cloneNode(true)
+
+  console.log(newSquare);
+  
+  document.querySelector('displayedquare-wrapper').appendChild(clnSquare)
+
+
+
+
 }
 
 const actionSquares = document.querySelectorAll('.actionsquare')
